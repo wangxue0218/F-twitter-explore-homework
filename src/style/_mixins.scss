@@ -2,3 +2,15 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn-variant($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  padding: $button-padding-y $button-padding-x;
+  border-radius: $button-radius;
+  border: $primary-color solid 1px;
+  &:hover {
+    cursor: pointer;
+    color: $button-hover-color;
+  }
+}

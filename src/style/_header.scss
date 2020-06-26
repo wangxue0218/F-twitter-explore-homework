@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: solid 1px $border-color;
+  nav {
+    > ul {
+      display: flex;
+      > li {
+        margin-right: 5px;
+      }
+      .btn-primary {
+        @include btn-variant($primary-color, $body-bg);
+      }
+      .btn-secondary {
+        @include btn-variant($white, $primary-color);
+      }
+    }
+  }
+}
