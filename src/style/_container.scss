@@ -1,0 +1,47 @@
+.container {
+  align-self: center;
+  height: 80vh;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: $form-padding-y $form-padding-x;
+    border: solid 1px $border-color;
+    border-radius: $border-radius-base;
+
+    h2 {
+      color: $heading-color;
+    }
+
+    input {
+      color: $gray;
+      background-color: $body-bg;
+      font-size: $font-size-base;
+      border: none;
+      border-bottom: solid 1px $border-color;
+      padding: $form-input-padding 0;
+
+      &:last-of-type {
+        margin-bottom: $form-row-margin;
+      }
+    }
+
+    a {
+      color: $primary-color;
+      margin-bottom: $form-row-margin;
+    }
+
+    p {
+      align-self: center;
+    }
+
+    .btn-primary {
+      @include btn-variant($primary-color, $body-bg);
+    }
+
+    .btn-secondary {
+      @include btn-variant($white, $primary-color);
+      margin-bottom: $form-row-margin;
+    }
+  }
+}

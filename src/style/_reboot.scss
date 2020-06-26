@@ -14,6 +14,7 @@ body {
   line-height: $line-height-base;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
